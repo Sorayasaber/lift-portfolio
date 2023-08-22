@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Chonburi&display=swap');
+
+body {
+    background: linear-gradient(to bottom, #eab1cf, #fdecf9);
+    text-align: center;
+    font-family: Arial, sans-serif;
+
+    /* styles.css */
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f0f0f0;
+    }
+
+    .side-panel {
+        width: 300px;
+        height: 100%;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+    }
+
+    .side-panel img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+}
+
+nav {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+nav a {
+    display: inline-block;
+    color: hotpink;
+    text-decoration: none;
+    transition: all 0.25s;
+}
+
+nav a:hover {
+    color: white;
+    transform: scale(1.15);
+}
+
+h1 {
+    font-size: 48px;
+    font-family: 'Chonburi', cursive;
+    color: hotpink;
+}
+
+ul {
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+ul li a {
+    color: black;
+}
+
+input,
+button {
+    padding: 0.5rem;
+    border: 1.5px solid black;
+    border-radius: 0.5rem;
+    background: transparent;
+    color: black;
+    font-size: 1rem;
+    transition: background-color 0.25s;
+}
+
+input:hover,
+input:focus,
+button:hover,
+button:active {
+    background-color: #ffffff80;
+}
+
+button {
+    cursor: pointer;
+}
+
+::placeholder {
+    color: black;
+}
+
+.message {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s;
+}
+
+.message.visible {
+    opacity: 1;
+    pointer-events: all;
+}
